@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+    <!-- Favicon-->
+    <link rel="icon" href="https://t4.ftcdn.net/jpg/04/34/74/41/240_F_434744168_Dk2Fg26hQKRuI9oBwITY5VwdXiPm9N5D.jpg">
+    
+    <link rel="stylesheet" href="css/styles.css">
+    <title>DoZion - Crtyptocurrency</title>
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/5a09dcbd6b.js" crossorigin="anonymous"></script>
+    
+</head>
+
+<body>
+    <section class="firstPage" id="top">
+        <div class="topnav">
+            <div>
+              <a href="index.html"><img class="logo-image" src="https://cdn-icons-png.flaticon.com/128/4964/4964814.png" width="80px" height="80px" alt="dogecoin image"></a>  
+            </div>
+            
+           <div>
+               <a href="index.html" style="text-decoration: none; color: inherit;"><h1 class="titleName">DoZion</h1></a>
+            </div>
+            
+            <p id="date"></p>
+            
+        </div>
+</section>
+
+<section class="cryptocurrency">
+
+    <div class="search-bar">
+        <label class="label">All Currencies</label>
+        <div class="example" action="">
+            <input type="text" placeholder="Search.." name="search" onkeyup="searchCrypto()" id="filter">
+            <button type="submit" id="btn" onclick="searchCrypto()"><i class="fa fa-search"></i></button>
+        </div>
+       
+    </div>
+
+    <div class="coin-container" id="coin-card">
+         
+        
+    </div>
+
+</section>
+
+<section class="footer" id="bottom">
+       
+    <div class="logo">
+        <a href="https://www.linkedin.com/in/pradyumna-mohanty-006a88203/" style="text-decoration: none; color: inherit;"><i class="fa-brands fa-linkedin fa-1x"></i></a>
+        <a href="https://github.com/pradycr7" style="text-decoration: none; color: inherit;"><i class="fa-brands fa-github fa-1x"></i></a>
+        <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=new" style="text-decoration: none; color: inherit;"><i class="fa-solid fa-envelope fa-1x"></i></a>
+        <a href="https://www.facebook.com/pradyumna.mohanty.56/" style="text-decoration: none; color: inherit;"><i class="fa-brands fa-facebook-square fa-1x"></i></a>
+        <p id="currYear"></p>
+    </div>
+    
+</section>
+
+    <script src="index.js"></script>
+    <script src="script.js"></script>
+    <script src="news-script.js"></script>
+</body>
+
+</html>

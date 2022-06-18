@@ -1,0 +1,388 @@
+body {
+    font-family: 'Montserrat', sans-serif;  
+    background-color: #121212;
+    color: #EEF2FF;
+    margin: 0;
+}
+
+h3 {
+    text-align: center;
+    font-size: 2rem;
+    color: orange;
+}
+
+.topnav {
+    display: flex;
+    justify-content: space-around;
+    align-items:baseline;
+    background-color: #F7ECDE;
+    color:#121212 ;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; 
+    box-shadow: 0px 0px 15px  rgba(255, 254, 254, 0.938);
+}
+
+h1.titleName {
+     font-size: 40px; 
+     position: relative;
+     right: 225px;    
+}
+
+.logo-image {
+    position: relative;
+    top: 20px;
+    right: 15px;
+}
+
+.news {
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    border-width: 20px;
+    border: solid;
+    border-color:#EEF2FF ;
+    background-color: #121212;
+    transition: transform .2s; /* Animation */
+     
+     background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWJyDW1wUANSal0QCZAJdIRTYOPsO3tcZtFQ&usqp=CAU);
+}
+
+
+.news:hover {
+    background-color: #219F94;
+    color:#EEF2FF ;
+    transform: scale(1.5);
+}
+.text {
+    font-family: 'Montserrat', sans-serif; 
+    color: #CFF1EF;
+   
+}
+
+ .news-text {
+     margin-top: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+} 
+
+#date {
+     
+}
+
+/* ------------------- MIDDLE SECTION --------------- */
+
+ #middle {
+    height: 550px;
+}
+
+.slide {
+    position: relative;
+    margin: auto;
+    width: 60%;
+    margin-top: 150px;
+    
+}
+
+.box {
+   box-sizing: border-box;  
+   position: absolute;
+   width: 100%;
+   height: 400px;
+   border-width: 20px;
+    border: solid;
+    border-color:#EEF2FF ;
+    background-color: #121212;
+    transition: transform .2s;
+   inset: 0;
+   /* opacity: 0; */
+}
+
+.slide[data-active] {
+    opacity: 1;
+}
+
+.slide-btn {
+    position: absolute;
+    z-index: 2;
+    background: none;
+    border: none;
+    color: blanchedalmond;
+    font-size: 4rem;
+   top: 160px;
+
+}
+
+.slide-btn:hover {
+     background-color: #CFF1EF; 
+    color: black;
+    opacity: 0.2;
+}
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+.firstbox {
+   background-image: url(https://d1rytvr7gmk1sx.cloudfront.net/wp-content/uploads/2021/05/cryptocurrency-market.jpg?x63184);
+   background-size: cover;
+}
+
+.secondbox {
+     background-image: url(data:image/jpeg;base64,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);
+    background-size: cover;
+    }
+
+.thirdbox {
+    background-image: url(https://apicms.thestar.com.my/uploads/images/2022/01/09/1437380.jpg);
+    background-size: cover;
+}
+
+.fourthbox {
+    background-image: url(https://img.etimg.com/thumb/msid-80263701,width-650,imgsize-161986,,resizemode-4,quality-100/technology.jpg);
+    background-size: cover;
+}
+
+.fifthbox {
+    background-image: url(https://www.lotame.com/wp-content/uploads/2021/08/About-DataTech.png);
+    background-size: cover;  
+}
+
+
+
+.box:hover {
+    background-color: #219F94;
+    color:#EEF2FF ;
+    transform: scale(1.2);
+}
+
+.box h1 {
+    text-align: center;
+    font-size: 4rem;
+    transform: translateY(200%);
+    color: #FFEDDB;
+}
+
+
+/* -------------------CRYPTO GUIDE SECTION ------------------- */
+
+#cryptoguide {
+    padding: 10px;
+    background-color:#EEF2FF;
+    color: #121212;
+}
+
+.guide-main-div1, .guide-main-div2 {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.fgi-main-div {
+    padding: 7px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.938);
+}
+.fgi-main-div:hover {
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.938);
+}
+
+.rsi-main-div {
+    padding: 7px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.938);
+}
+.rsi-main-div:hover {
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.938);
+}
+/* ---------------- PREDICTIONS ------------------*/
+
+.graph-img{
+    /* border: 10px;
+    border-color: white; */
+    background-color: white;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .graph-img-flex {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+  }
+
+  /* ------------- TECH SECTION -------------- */
+
+  #tech {
+      padding: 10px;  
+        background-color:#EEF2FF;
+        color: #121212;
+}
+
+  .tech-page {
+      padding: 10px;
+  }
+
+  /* ------------ ABOUT SECTION -------------- */
+
+  #about {
+      padding: 20px;
+  }
+
+   .li-about {
+      line-height: 1.6;
+  } 
+
+/* --------------CRYPTO.html ------------------ */
+
+.search-bar {
+    display: grid;
+    justify-content: center;
+    margin-top: 200px;
+}
+
+.label {
+    margin: 10px;
+    font-size: 30px;
+}
+
+.example input[type=text] {
+    padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+}
+
+.example button {
+    padding: 10px;
+  background: #557C55;
+  /* color: white; */
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none; /* Prevent double borders */
+  cursor: pointer;
+}
+
+.example button:hover {
+    background: #B1D0E0;
+  }
+
+.coin-container{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .grid{
+    border:solid 0px;
+    min-width: 350px;
+    height: 150px;
+    margin:20px;
+    color: white;
+    font-size: 0.8rem;
+  }
+  
+  .grid:hover{
+   /*  background-color: grey; */
+   box-shadow: 0px 0px 5px rgba(255, 254, 254, 0.938);
+    transform: scale(1.05);
+  }
+  .coin-label{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    text-decoration: none;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+
+  /*------------------- news.html Page ----------------*/
+
+  .news-container{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .news-grid {
+    border: solid 0px;
+    min-width: 350px;
+    height: 250px;
+    width: 40%;
+    margin: 20px;
+    color: white;
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 7px;
+    
+    border-radius: 5px;
+}
+  
+  .news-grid:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 1px 2px rgba(255, 254, 254, 0.938);
+  }
+
+  
+.heading-news {
+    display: grid;
+    justify-content: center;
+    margin-top: 200px;
+}
+ /*  .coin-label{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    text-decoration: none;
+    margin-left: 10px;
+    margin-right: 10px;
+  } */
+
+
+  
+
+
+
+
+
+
+  /* ------------ FOOTER ------------- */
+
+  #bottom {
+       display: flex;
+      justify-content:space-around;
+       align-items: center;  
+      background-color: #EEF2FF;
+      color: #121212;
+      padding-top: 20px;
+      padding-bottom: 20px;
+  }
+
+ /*  p {
+      text-align: center;
+      font-size: 1.3rem;
+       
+  } */
+
+  .fa-brands, .fa-envelope {
+     padding: 15px;
+  }
+
+  .fa-brands:hover, .fa-envelope:hover {
+      color: orange;
+  }
+  #currYear {
+    margin: 0;
+  }

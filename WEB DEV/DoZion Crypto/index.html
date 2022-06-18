@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+    <!-- Favicon-->
+    <link rel="icon" href="https://t4.ftcdn.net/jpg/04/34/74/41/240_F_434744168_Dk2Fg26hQKRuI9oBwITY5VwdXiPm9N5D.jpg">
+    
+    <link rel="stylesheet" href="css/styles.css">
+    <title>DoZion - Crtypto Trader</title>
+
+    <!-- Font Awesome -->
+    
+    <script src="https://kit.fontawesome.com/5a09dcbd6b.js" crossorigin="anonymous"></script>
+
+    <!-- Plotly Gauge Meter -->
+    <script src='https://cdn.plot.ly/plotly-2.9.0.min.js'></script>
+
+</head>
+
+<body>
+    <section class="firstPage" id="top">
+        <div class="topnav">
+            <img class="logo-image" src="https://cdn-icons-png.flaticon.com/128/4964/4964814.png" width="80px" height="80px" alt="dogecoin image">
+            <h1 class="titleName">DoZion</h1>
+            <p id="date"></p>
+            
+        </div>
+        <div class="news-text">
+            <a href="news.html"> <div class="news">
+                
+            </div></a>
+           
+            <div class="text">
+                <h2>Digital marketplace for crypto collectibles</h2>
+                <h2> &emsp; &emsp; &emsp;   Buy, sell and discover exclusive crypto currencies...</h2>  <!-- NOTE - &emsp that helps us to provide extra spaces at the start as well as end or anywhere u want. -->  
+            </div>
+        </div>
+        
+    </section>
+    
+    <section class="secondPage" id="middle">
+        <div class="slide">
+
+            <button class="slide-btn prev" onclick="plusSlides(-1)">&lt;</button>
+            <button class="slide-btn next" onclick="plusSlides(1)">&gt;</button>
+
+            <a href="crypto.html"><div class="firstbox box " data-active>
+                <h1>CRYPTOCURRENCY</h1>
+            </div></a>
+            
+            <a href="#cryptoguide"><div class="secondbox box">
+                <h1>CRYPTO GUIDE</h1>
+            </div></a>
+
+            <a href="#predictions"> <div class="thirdbox box">
+                <h1>PREDICTIONS</h1>
+            </div></a>
+            
+            <a href="#tech"> <div class="fourthbox box">
+                <h1>TECH</h1>
+            </div></a>
+           
+            <a href="#about"><div class="fifthbox box">
+                <h1>ABOUT</h1>
+            </div></a>
+
+        </div>
+
+    </section>
+
+
+
+
+
+    <section id="cryptoguide">
+        <h3>Crypto Guide</h3>
+        <div class="guide-main-div1">
+
+            <div style="width: 700px;">
+                <h2>Crypto Fear & Greed Index</h2>
+                <p>Each day, we analyze emotions and sentiments from different sources and crunch them into one simple number: The Fear & Greed Index for Bitcoin and other large cryptocurrencies.</p>
+    <br> 
+                    <p>The crypto market behaviour is very emotional. People tend to get greedy when the market is rising which results in FOMO (Fear of missing out). </p>
+                    <br> 
+                    <p>Also, people often sell their coins in irrational reaction of seeing red numbers. With our Fear and Greed Index, we try to save you from your own emotional overreactions.</p>
+                     <br>
+                        <p> There are two simple assumptions:</p> 
+                    <br>
+                    <ul>
+                        <li>Extreme fear can be a sign that investors are too worried. That could be a buying opportunity.</li>
+                        <br>
+                        <br>
+                        <li>When Investors are getting too greedy, that means the market is due for a correction.</li>
+                    </ul>
+                    
+                    
+            </div>
+            
+            <div style="width: 400px;" class="fgi-main-div">
+                <h2>Bitcoin FGI Meter</h2> 
+                <p>Crypto Market Sentiment Analysis</p>
+                <div id="FGI">
+
+                </div>
+                <b style="font-size: 1.2rem;"><i class="fa-solid fa-lightbulb"></i> Tip</b>
+               <p>Watch for strong currents of fear. These opportunities are great for investment, provided you stay in for the long haul.</p> 
+            </div>
+    
+        </div>
+
+        <div class="guide-main-div2">
+
+            <div style="width: 700px;">
+                <h2>Crypto Fear & Greed Index Over Time</h2> 
+     
+               <p>This is a plot of the Fear & Greed Index over time, where a value of 0 means "Extreme Fear" while a value of 100 represents "Extreme Greed".</p>  
+             </div>
+     
+             <div style="width: 400px;" class="rsi-main-div">
+                <h2>RSI</h2> 
+                <div id="RSI">
+
+                </div>
+               <p>The Relative Strength Index (RSI) chart is a momentum based visualization for the Bitcoin market. We use the RSI to measure the speed as well as the magnitude of directional price movements in Bitcoin. Depending on how fast a price changes and by how much, an RSI score is given to the month being observed relative to the previous 12 months.</p> 
+                 <ul>
+                     <li>High RSI means that price movements are very positive.</li>
+                     <li>Low RSI means that price movements are very negative.</li>
+                 </ul>
+              
+             </div>
+
+        </div>
+            
+
+        
+        
+        
+    </section>
+
+
+
+
+
+
+    <section id="predictions">
+<h3>Predictions</h3>
+
+    <div class="predict" style="padding: 15px;">
+      
+      <h1>What Is The Bitcoin Stock-To-Flow Model?</h1>
+      <p>The S2F, or stock-to-flow model in full, is a price prediction method that's based on the ratio of the supply (stock) to the the annual production (flow).
+          The model can be applied on any limited asset, whether that be Bitcoin or metals like gold and silver. It makes use of the fact that assets like these will continue to get scarce as time passes. Below is the latest chart for the BTC S2F model.</p>
+
+      
+        <div class="graph-img" style="padding:10px; border-radius: 5px; height: 80%; width: 80%; margin: auto;">
+            <img src="images/image.jpeg" class="graph1"  height="600px" width="100%" style="border-radius: 5px;">
+    
+            <p>The actual BTC price vs stock-to-flow model predictions | Source: <a href="https://stats.buybitcoinworldwide.com/stock-to-flow/">BuyBitcoinWorldWide</a> </p>
+    
+    
+          </div>
+      
+      <p>As the above graph shows, while there have been some areas of deviation, the model has been overall quite close to the real thing so far.<br><br>
+
+The floor model, which the earlier predictions were taken from, is a different method from S2F, and it's based on price and on-chain data.<br><br>
+
+In the replies to the tweet, PlanB explains that stock-to-flow's prediction for this Bitcoin cycle is an “average” price of $100k. Because of this, it's hard to say right now at which level the model might be considered invalidated.</p>
+    </div>
+
+  
+    </section>
+
+
+
+
+
+    <section id="tech">
+<h3>Tech</h3>
+<div class="tech-page">
+    <h2>Algorithms, Cryptography and Blockchain Are at the Heart of It All</h2>
+    <p>When cryptocurrencies are designed to be used as money, transactions are stored on a special kind of secure database called a blockchain, which serves as a ledger of all coded transactions. Think of it as a checkbook for cryptocurrency.</p> 
+   <br>
+   <p> Discover: <a href="https://www.gobankingrates.com/retirement/planning/should-crypto-nfts-be-part-your-retirement-plan/" style="color: inherit;"> <em>Should Crypto and NFTs Be Part of Your Retirement Plan?</em> </a> </p>
+   <br>
+    <p>Once entered into the blockchain, no one can ever change an entry in the database without meeting specific conditions. Everyone involved can see the public record of all transitions.</p> 
+   <br>
+    <p>Blockchain technology, therefore, allows cryptocurrency to achieve its three most important defining features:</p>  
+   <br>
+   <ul>
+       <li>Transparency</li>
+       <br>
+       <li>Immutability</li>
+       <br>
+       <li>Decentralization</li>
+   </ul>
+</div>
+
+
+    </section>
+
+
+
+    <section id="about">
+        <h3>About</h3>
+        <p>DoZion is a simple web app based on Bitcoin price predictions and some past data to help people make a choice easily.<br> <br>
+        
+            How to take profit while Bitcoin rises or even while it falls? Our system analyzes prices of popular cryptocurrencies and generates predictions every 4 hours, making the task easier for the users. The app gives opinions and predictions regarding numerous cryptocurrencies and updates daily on the website.<br> <br>
+            
+            It also provides a robust bitcoin price prediction tool revealing bitcoin 2025 and 2030 price predictions. This unique feature periodically questions users for their opinions on several bitcoin-related items of interest.<br><br>
+            
+            The real-time results provide an unparalleled value in specifically targeted data around bitcoin price predictions, making DoZion an invaluable cryptocurrency website for crypto enthusiasts and bitcoin believers everywhere.</p><br>
+            
+            <ul class="li-about">
+            Features:
+              <li>Bitcoin Price Predictions</li>
+              <li>Whether to Buy/Sell/Hold</li>
+              <li>Fear and Greed Index</li>
+              <li>Relative Strength Index</li>
+              <li>Bitcoin’s Ranking</li>
+            </ul>
+            </section>
+
+
+
+    <section class="footer" id="bottom">
+       
+        <div class="logo">
+            <a href="https://www.linkedin.com/in/pradyumna-mohanty-006a88203/" style="text-decoration: none; color: inherit;"><i class="fa-brands fa-linkedin fa-1x"></i></a>
+            <a href="https://github.com/pradycr7" style="text-decoration: none; color: inherit;"><i class="fa-brands fa-github fa-1x"></i></a>
+            <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=new" style="text-decoration: none; color: inherit;"><i class="fa-solid fa-envelope fa-1x"></i></a>
+            <a href="https://www.facebook.com/pradyumna.mohanty.56/" style="text-decoration: none; color: inherit;"><i class="fa-brands fa-facebook-square fa-1x"></i></a>
+            <p id="currYear"></p>
+        </div>
+        
+    </section>
+
+    <script src="rsi.js"></script>
+    <script src="fgi.js"></script>
+    <script src="index.js"></script>
+    <script src="script.js"></script>
+    
+</body>
+</html>

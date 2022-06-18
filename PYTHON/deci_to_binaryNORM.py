@@ -1,0 +1,9 @@
+a=125
+count=0
+bin_num=0
+while(a>0):
+    bi=a%2
+    bin_num=bin_num+bi*(10**count)
+    a=int(a/2)
+    count+=1
+print(bin_num)
